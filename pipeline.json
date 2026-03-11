@@ -1,0 +1,60 @@
+{
+  "id": "tamago",
+  "name": "Tamago — Duolingo for Cooking",
+  "priority": "P0",
+  "status": "implementation",
+  "stages": {
+    "idea": { "complete": true, "completedAt": "2026-03-11T00:00:00Z", "artifact": "idea.md" },
+    "prd": { "complete": true, "completedAt": "2026-03-11T02:30:00Z", "artifact": "prd-v3.md" },
+    "design_spec": { "complete": false, "artifact": "pending" },
+    "tech_spec": { "complete": false, "artifact": "pending" },
+    "implementation": { "complete": false, "startedAt": "2026-03-11T02:36:00Z", "artifact": "tamago-rn/" },
+    "code_review": { "complete": false },
+    "qa": { "complete": false },
+    "deploy": { "complete": false },
+    "gtm": { "complete": false },
+    "iterate": { "complete": false }
+  },
+  "sprint": {
+    "goal": "3-5 day MVP → TestFlight",
+    "startDate": "2026-03-11",
+    "targetDate": "2026-03-15",
+    "focus": "Meal Prep conversational voice flow (the secret sauce)"
+  },
+  "budget": {
+    "voice": "$10.00",
+    "spent": "$0.00",
+    "remaining": "$10.00"
+  },
+  "team": {
+    "owner": "Xavier",
+    "orchestrator": "Kato",
+    "agents": ["cri-voice-cost", "yuki-rn-arch", "koji-gamification", "sora-obsidian"]
+  },
+  "metrics": {
+    "northStar": "3+ cooking sessions in Week 1 = 4x Week 12 retention",
+    "targets": {
+      "D1_retention": ">40%",
+      "D7_retention": ">20%",
+      "voice_usage": ">50%",
+      "weekly_streak": ">25%"
+    }
+  },
+  "decisions": [
+    {
+      "date": "2026-03-11",
+      "decision": "Multi-turn conversational voice for MVP (if cost <2x single-turn)",
+      "rationale": "The 'magical moment' depends on flowy conversation, not form-filling"
+    },
+    {
+      "date": "2026-03-11",
+      "decision": "Weekly streaks at 3 cooks/week (Strava-style)",
+      "rationale": "More sustainable than daily streaks for meal preppers"
+    },
+    {
+      "date": "2026-03-11",
+      "decision": "React Native + Expo (not SwiftUI)",
+      "rationale": "Cross-platform, faster iteration, existing RN skills"
+    }
+  ]
+}
