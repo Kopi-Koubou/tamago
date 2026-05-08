@@ -10,8 +10,12 @@
 tamago/
 ├── README.md              # This file
 ├── pipeline.json          # Pipeline stage tracking
-├── prd-v3.md              # Product requirements (v3.1)
+├── prd.md                 # Canonical product requirements (v3.2)
+├── design-spec.md         # Canonical design specification
 ├── idea.md                # Original idea
+├── docs/
+│   └── archive/
+│       └── prd/           # Archived PRD versions
 ├── research/              # LTV analysis, user research
 │
 └── app-rn/                # React Native app (Expo)
